@@ -1,0 +1,28 @@
+
+/*Por medio de la etiqueta 
+body se esta definiendo que todo el documento tenga un solo tipo de letra */
+body{
+	font-family: sans-serif;
+
+}
+/*A las etiquetas ancor<a></a> hace que las palabras tengan
+un subrayado y tomen un color azulado*/
+/*A listas que se creo con  las etiquetas <ul> y <li> les agrega una viñeta  y un espacio por defecto*/
+
+/*outline: permite que se dibuje un contorno atravez de la etiqueta que permite
+	visualizarlo, no desmaqueta la estructura*/
+ul{
+	outline: 1px solid yellow;	
+	list-style: none; /*le quita las viñetas*/
+	margin: 0;
+	padding: 0;
+	width: 150px;
+}
+li{
+	outline: 1px solid red;
+}
+a{
+	outline: 1px solid green;
+	width: 150px;
+	height: 20px;
+}
