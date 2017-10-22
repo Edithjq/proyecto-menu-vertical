@@ -5,6 +5,9 @@ body{
 	font-family: sans-serif;
 
 }
+nav{
+		width: 200px;
+}
 /*A las etiquetas ancor<a></a> hace que las palabras tengan
 un subrayado y tomen un color azulado*/
 /*A listas que se creo con  las etiquetas <ul> y <li> les agrega una viñeta  y un espacio por defecto*/
@@ -12,17 +15,43 @@ un subrayado y tomen un color azulado*/
 /*outline: permite que se dibuje un contorno atravez de la etiqueta que permite
 	visualizarlo, no desmaqueta la estructura*/
 ul{
-	outline: 1px solid yellow;	
+	/*outline: 1px solid yellow;*/	
 	list-style: none; /*le quita las viñetas*/
 	margin: 0;
 	padding: 0;
-	width: 150px;
+	line-height: 30px;
 }
 li{
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
+	background: #f5f5f0;
 }
+/*Estados de los eenlaces: LoVe / HATe link Visited hover Active*/
 a{
-	outline: 1px solid green;
-	width: 150px;
-	height: 20px;
+	/*outline: 1px solid green;*/
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding-left: 10px;
 }
+
+a:hover{
+	background: #e0e0d1;/*al pasar por los item con el mouse cambia color plomo oscuro*/
+}
+a:active{/*al hacer clic sobre cada item toma el color de negro*/
+	background: #333;
+	color: #fff; /*texto blanco*/
+}
+ul li:first-child{/*primer item: color amarillo*/
+	background: #f9a91a;
+}
+ul li:first-child a{ 
+	color: #fff;/*primer item: texto color blanco*/
+}
+
+ul li:first-child  a:hover{/*cuando se pociciona sobre el primer itwm cambia el color de la letra a negro*/
+	color: #000;
+}
+
+ul li:first-child  a:active{
+	color: #fff;/*cuando se hace clic sobre el primer item cambia la letra a color blanco*/
+	}
